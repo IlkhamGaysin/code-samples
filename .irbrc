@@ -1,0 +1,5 @@
+require "./person"
+require "./employee"
+require "./application"
+require "./company"
+require "./exceptions/list"

@@ -1,6 +1,6 @@
 # My code samples
 
-This samples provide the capabilities for applying by an employee his application to a company and further getting a feedback from the company.
+This samples provide the capabilities for applying an employee of his application to a company and further getting a feedback from the company.
 
 ## Dependencies
 

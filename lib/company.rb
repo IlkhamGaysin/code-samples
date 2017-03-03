@@ -9,6 +9,7 @@ class Company
 
   def recieve_application(application = nil)
     return raise Errors::AbsenseApplicationError unless application
+    return raise Errors::ApplicationMismatchError unless application.is_a?(Application)
 
     generate_feedback(application)
   end

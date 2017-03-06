@@ -1,5 +1,5 @@
 module Errors
-  class CoverLetterTypeError < NotImplementedError
+  class CoverLetterTypeError < TypeError
     def initialize
       super("the second argument should be String")
     end

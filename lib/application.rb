@@ -3,6 +3,7 @@ class Application
 
   def initialize(employee, cover_letter = nil)
     return raise Errors::EmployeeMismatchError unless employee.is_a?(Employee)
+    return raise Errors::CoverLetterTypeError unless employee.is_a?(String)
 
     @employee = employee
     @cover_letter = cover_letter

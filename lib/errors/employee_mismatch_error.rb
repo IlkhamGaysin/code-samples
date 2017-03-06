@@ -1,7 +1,7 @@
 module Errors
   class EmployeeMismatchError < NotImplementedError
     def initialize
-      super("a passed argument should be an instance of Employee")
+      super("the first argument should be an instance of Employee")
     end
   end
 end

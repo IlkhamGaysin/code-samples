@@ -21,7 +21,7 @@ class Company
 
     skills = sanitized_skills(application)
 
-    if REQUIRED_SKILLS.any?{ |skill| skills.include?(skill) }
+    if REQUIRED_SKILLS.any? { |skill| skills.include?(skill) }
       "You are hired!"
     else
       "Sorry, You don't match our demands"

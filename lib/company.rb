@@ -10,6 +10,7 @@ class Company
   def recieve_application(application = nil)
     return raise Errors::AbsenseApplicationError unless application
     return raise Errors::ApplicationMismatchError unless application.is_a?(Application)
+    return raise Errors::AbsenseCoverLetterError unless application.cover_letter
 
     generate_feedback(application)
   end
@@ -17,8 +18,6 @@ class Company
   private
 
   def generate_feedback(application)
-    return raise Errors::AbsenseCoverLetterError unless application.cover_letter
-
     skills = sanitized_skills(application)
 
     if REQUIRED_SKILLS.any? { |skill| skills.include?(skill) }

@@ -1,3 +1,10 @@
+if ENV['CI']
+  require 'simplecov'
+  SimpleCov.start do
+    add_filter ['.bundle', 'spec', 'bin']
+  end
+end
+
 require 'bundler/setup'
 require 'pry'
 require 'contracts'

@@ -8,11 +8,20 @@ This samples provide the capabilities for applying an employee of his applicatio
 
 ## Quick Start
 
-```bash
-# clone
-git clone git@github.com:IlkhamGaysin/code-samples.git
-cd code-samples
+1. Clone application.
 
-# run irb
-irb
-```
+   ```bash
+   git clone git@github.com:IlkhamGaysin/code-samples.git
+   ```
+
+2. Run setup script
+
+  ```bash
+  bin/setup
+  ```
+
+3. Run console.
+
+  ```bash
+  bin/console
+  ```

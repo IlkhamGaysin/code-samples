@@ -10,9 +10,9 @@ This samples provide the capabilities for applying an employee of his applicatio
 
 1. Clone application.
 
-   ```bash
-   git clone git@github.com:IlkhamGaysin/code-samples.git
-   ```
+  ```bash
+  git clone git@github.com:IlkhamGaysin/code-samples.git
+  ```
 
 2. Run setup script
 
